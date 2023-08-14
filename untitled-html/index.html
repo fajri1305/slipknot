@@ -18,8 +18,22 @@
       <a href="music-frame.html">MUSIC</a>
       <a href="video-frame.html">VIDEO</a>
     </nav>
-    <a href="index.html" class="logo">Home</a>
+    <div class="navbar-toggle">☰</div>
 
+    <a href="index.html" class="logo">Home</a>
   </header>
+
   <img src="logo.png" class="home-logo">
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const navbarToggle = document.querySelector(".navbar-toggle");
+      const navbar = document.querySelector(".navbar");
+
+      navbarToggle.addEventListener("click", function () {
+        navbar.classList.toggle("active");
+      });
+    });
+  </script>
 </body>
+
+</html>
